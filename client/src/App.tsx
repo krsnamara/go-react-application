@@ -48,11 +48,11 @@ function App() {
       {data?.map((todo) =>{
         return (
         <List.Item 
-          onClick={ todo.done ? (() => markTodoAsDone(todo.id)) : (() => unmarkTodoAsDone(todo.id))}
+          onClick={() => markTodoAsDone(todo.id)}
           key={`todo_list__${todo.id}`}
           icon={
             todo.done ? (
-              <ThemeIcon color="teal" size={24} radius="xl">
+              <ThemeIcon color="teal" size={24} radius="xl" cursor="pointer">
                 <CheckCircleFillIcon size={20}/>
               </ThemeIcon>
             ) : (
