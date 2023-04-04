@@ -52,7 +52,7 @@ function App() {
           key={`todo_list__${todo.id}`}
           icon={
             todo.done ? (
-              <ThemeIcon color="teal" size={24} radius="xl" cursor="pointer">
+              <ThemeIcon color="teal" size={24} radius="xl">
                 <CheckCircleFillIcon size={20}/>
               </ThemeIcon>
             ) : (
